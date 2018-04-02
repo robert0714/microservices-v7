@@ -11,3 +11,13 @@ This version contains three projects:
 * **ui** contains the web pages and javascript of our application, within an independently deployable component.
 * **gateway** contains the new Spring Boot Application that models the API Gateway in our system, using Zuul.
 
+
+# Docker
+docker run -d --hostname my-rabbit --name some-rabbit -p 15671:15671 -p 15672:15672  -p 25672:25672   -p 4369:4369  -p 5671:5671 -p 5672:5672   rabbitmq:3-management
+<br/>
+default user,password ( guest guest  )
+
+頁面是管理頁面(15672頁面是不錯的選擇)
+不然用他的CLI指令，搭配Python下指令
+https://www.rabbitmq.com/management-cli.html
+python.exe rabbitmqadmin.
